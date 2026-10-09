@@ -5,13 +5,13 @@
 
 </div>
 
-[Available addons](#available-addons) · [Installation](#installation-windows) · [Damage! commands](#damage-commands) · [Bartender2 commands](#bartender2-commands) · [Bagnon](#bagnon-rewritten) · [pfQuest](#pfquest-rewritten) · [More addons](#more-keldurn-addons)
+[Available addons](#available-addons) · [Installation](#installation-windows) · [Damage! commands](#damage-commands) · [Bartender2 commands](#bartender2-commands) · [Bagnon](#bagnon-rewritten) · [pfQuest](#pfquest-rewritten) · [Gatherer](#gatherer-rewritten) · [More addons](#more-keldurn-addons)
 
 ---
 
 ## Available addons
 
-This repository is home to a growing collection of addons for Keldurn. The collection currently includes **Damage!**, **Bartender2 (Rewritten)**, **Bagnon (Rewritten)**, and **pfQuest (Rewritten)**.
+This repository is home to a growing collection of addons for Keldurn. The collection currently includes **Damage!**, **Bartender2 (Rewritten)**, **Bagnon (Rewritten)**, **pfQuest (Rewritten)**, and **Gatherer (Rewritten)**.
 
 | Addon | What it does | Commands |
 | --- | --- | --- |
@@ -19,6 +19,8 @@ This repository is home to a growing collection of addons for Keldurn. The colle
 | **Bartender2 (Rewritten)** | Move and arrange your hotbars, lock their positions, and bind keys by hovering over buttons. Rewritten for Keldurn. | `/bar` or `/bartender` |
 | **Bagnon (Rewritten)** | Combines all your bags into one window, with inventory refresh fixes for Keldurn. | Open your bags normally |
 | **pfQuest (Rewritten)** | Quest locations, map markers, a searchable database, and route guidance, with movement-performance optimizations for Keldurn. | `/pfquest` or `/db` |
+
+| **Gatherer (Rewritten)** | Records gathered herbs, ore, and treasure locations and displays map markers, with a loading-error fix for Keldurn. | `/gather` or `/gatherer` |
 
 ## Installation (Windows)
 
@@ -36,7 +38,7 @@ Download the ZIP for each addon you want from this repository, then follow these
 
 You can also install from the character selection screen: open **AddOns**, click **Install ZIP**, and select the downloaded addon archive. Then enable the addon.
 
-> **Folder tip:** The addon's `.toc` file should be directly inside its addon folder. For Damage!, the path ends in `AddOns\KeldurnMeter\KeldurnMeter.toc`. For Bartender2, it ends in `AddOns\Bartender2\Bartender2.toc`. For pfQuest, it ends in `AddOns\pfQuest\pfQuest.toc`. Keep the included folder name when extracting.
+> **Folder tip:** The addon's `.toc` file should be directly inside its addon folder. For Damage!, the path ends in `AddOns\KeldurnMeter\KeldurnMeter.toc`. For Bartender2, it ends in `AddOns\Bartender2\Bartender2.toc`. For pfQuest, it ends in `AddOns\pfQuest\pfQuest.toc`. For Gatherer, it ends in `AddOns\Gatherer\Gatherer.toc`. Keep the included folder name when extracting.
 
 When updating an addon, replace its existing files and restart Keldurn. Avoid leaving a second copy of the same addon installed.
 
@@ -127,6 +129,17 @@ Route previews show up to **32 stops** to limit expensive route planning. All qu
 | `/pfquest config` | Open settings |
 | `/pfquest show` | Open the database browser |
 | `/pfquest perf` | Print FPS, zone marker counts, and nearby marker candidates |
+
+## Gatherer (Rewritten)
+
+Gatherer 2.99.1, with a small compatibility fix for Keldurn.
+
+- **Gathering history:** records the locations of herbs, ore, and treasure you collect.
+- **Map markers:** shows recorded gathering locations on the minimap and world map.
+- **Loading-error fix:** removes a duplicated semicolon in the **Hide Icon** checkbox handler that prevented it from compiling.
+- **Saved data:** preserves recorded nodes and existing settings.
+
+Use `/gather` or `/gatherer` for Gatherer's commands. Install the included `Gatherer` folder using the steps above. When updating, close Keldurn and replace that folder while keeping your saved variables.
 
 ## More Keldurn addons
 
