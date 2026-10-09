@@ -1,22 +1,23 @@
 <div align="center">
 
-<h1>Kush's Keldurn Addons</h1>
-<p>Addons rewritten and adapted for the Keldurn vanilla 1.12 client.</p>
+<h1>⚔️ Keldurn Addons</h1>
+<p>Addons for the Keldurn vanilla 1.12 client, including rewrites and addons that work out of the box.</p>
 
 </div>
 
-[Available addons](#available-addons) · [Installation](#installation-windows) · [Damage! commands](#damage-commands) · [Bartender2 commands](#bartender2-commands) · [More addons](#more-keldurn-addons)
+[Available addons](#available-addons) · [Installation](#installation-windows) · [Damage! commands](#damage-commands) · [Bartender2 commands](#bartender2-commands) · [Bagnon](#bagnon) · [More addons](#more-keldurn-addons)
 
 ---
 
 ## Available addons
 
-This repository is home to a growing collection of addons for Keldurn. The collection currently includes **Damage!** and **Bartender2 (Rewritten)**.
+This repository is home to a growing collection of addons for Keldurn. The collection currently includes **Damage!**, **Bartender2 (Rewritten)**, and **Bagnon**.
 
 | Addon | What it does | Commands |
 | --- | --- | --- |
 | **Damage!** | Tracks damage and DPS, with spell breakdowns, pet attribution, recent fights, and session totals. | `/damage` or `/dam` |
 | **Bartender2 (Rewritten)** | Move and arrange your hotbars, lock their positions, and bind keys by hovering over buttons. Rewritten for Keldurn. | `/bar` or `/bartender` |
+| **Bagnon** | Combines all your bags into one window. Works out of the box in Keldurn; no rewrite required. | Open your bags normally |
 
 ## Installation (Windows)
 
@@ -94,6 +95,12 @@ Both `/bar` and `/bartender` support the same subcommands.
 | `/bar` | List available options |
 
 In bind mode, **Backspace** or **Delete** clears the hovered button's bindings. Left and right click are reserved; middle click, mouse buttons 4/5, and the mouse wheel are supported. Bag and micro-menu bars can be moved but are not included in hover binding.
+
+## Bagnon
+
+Combines all your bags into a single window, making your inventory easier to browse.
+
+**Works out of the box in Keldurn.** Bagnon is included without a rewrite or compatibility changes. Install it using the steps above, enable it, and open your bags normally.
 
 ## More Keldurn addons
 
