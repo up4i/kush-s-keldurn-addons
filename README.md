@@ -19,7 +19,6 @@ This repository is home to a growing collection of addons for Keldurn. The colle
 | **Bartender2 (Rewritten)** | Move and arrange your hotbars, lock their positions, and bind keys by hovering over buttons. Rewritten for Keldurn. | `/bar` or `/bartender` |
 | **Bagnon (Rewritten)** | Combines all your bags into one window, with inventory refresh fixes for Keldurn. | Open your bags normally |
 | **pfQuest (Rewritten)** | Quest locations, map markers, a searchable database, and route guidance, with movement-performance optimizations for Keldurn. | `/pfquest` or `/db` |
-
 | **Gatherer (Rewritten)** | Records gathered herbs, ore, and treasure locations and displays map markers, with a loading-error fix for Keldurn. | `/gather` or `/gatherer` |
 
 ## Installation (Windows)
