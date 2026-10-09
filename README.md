@@ -1,6 +1,6 @@
 <div align="center">
 
-<h1>⚔️ Keldurn Addons</h1>
+<h1>Kush's Keldurn Addons</h1>
 <p>Addons rewritten and adapted for the Keldurn vanilla 1.12 client.</p>
 
 </div>
