@@ -5,19 +5,20 @@
 
 </div>
 
-[Available addons](#available-addons) · [Installation](#installation-windows) · [Damage! commands](#damage-commands) · [Bartender2 commands](#bartender2-commands) · [Bagnon](#bagnon) · [More addons](#more-keldurn-addons)
+[Available addons](#available-addons) · [Installation](#installation-windows) · [Damage! commands](#damage-commands) · [Bartender2 commands](#bartender2-commands) · [Bagnon](#bagnon) · [pfQuest](#pfquest-rewritten) · [More addons](#more-keldurn-addons)
 
 ---
 
 ## Available addons
 
-This repository is home to a growing collection of addons for Keldurn. The collection currently includes **Damage!**, **Bartender2 (Rewritten)**, and **Bagnon**.
+This repository is home to a growing collection of addons for Keldurn. The collection currently includes **Damage!**, **Bartender2 (Rewritten)**, **Bagnon**, and **pfQuest (Rewritten)**.
 
 | Addon | What it does | Commands |
 | --- | --- | --- |
 | **Damage!** | Tracks damage and DPS, with spell breakdowns, pet attribution, recent fights, and session totals. | `/damage` or `/dam` |
 | **Bartender2 (Rewritten)** | Move and arrange your hotbars, lock their positions, and bind keys by hovering over buttons. Rewritten for Keldurn. | `/bar` or `/bartender` |
 | **Bagnon** | Combines all your bags into one window. Works out of the box in Keldurn; no rewrite required. | Open your bags normally |
+| **pfQuest (Rewritten)** | Quest locations, map markers, a searchable database, and route guidance, with movement-performance optimizations for Keldurn. | `/pfquest` or `/db` |
 
 ## Installation (Windows)
 
@@ -35,7 +36,7 @@ Download the ZIP for each addon you want from this repository, then follow these
 
 You can also install from the character selection screen: open **AddOns**, click **Install ZIP**, and select the downloaded addon archive. Then enable the addon.
 
-> **Folder tip:** The addon's `.toc` file should be directly inside its addon folder. For Damage!, the path ends in `AddOns\KeldurnMeter\KeldurnMeter.toc`. For Bartender2, it ends in `AddOns\Bartender2\Bartender2.toc`. Keep the included folder name when extracting.
+> **Folder tip:** The addon's `.toc` file should be directly inside its addon folder. For Damage!, the path ends in `AddOns\KeldurnMeter\KeldurnMeter.toc`. For Bartender2, it ends in `AddOns\Bartender2\Bartender2.toc`. For pfQuest, it ends in `AddOns\pfQuest\pfQuest.toc`. Keep the included folder name when extracting.
 
 When updating an addon, replace its existing files and restart Keldurn. Avoid leaving a second copy of the same addon installed.
 
@@ -102,6 +103,26 @@ Combines all your bags into a single window, making your inventory easier to bro
 
 **Works out of the box in Keldurn.** Bagnon is included without a rewrite or compatibility changes. Install it using the steps above, enable it, and open your bags normally.
 
+## pfQuest (Rewritten)
+
+Based on Shagu's pfQuest, with the minimap and route update paths rewritten for Keldurn.
+
+- **Quest markers:** find quest locations and objectives on the world map and minimap.
+- **Searchable database:** look up quests, items, creatures, and objects.
+- **Route guidance:** use route lines and the direction arrow to reach objectives.
+- **Movement-performance optimizations:** scan nearby minimap markers, reduce repeated updates, and avoid redrawing player route lines on a closed world map.
+
+Route previews show up to **32 stops** to limit expensive route planning. All quest markers, databases, and translations are retained.
+
+### pfQuest commands
+
+| Command | Action |
+| --- | --- |
+| `/pfquest` or `/db` | List available commands |
+| `/pfquest config` | Open settings |
+| `/pfquest show` | Open the database browser |
+| `/pfquest perf` | Print FPS, zone marker counts, and nearby marker candidates |
+
 ## More Keldurn addons
 
 For more addons, I recommend **[ne0x86/keldurn-addons](https://github.com/ne0x86/keldurn-addons)**. ne0x86 has already rewritten and shared additional addons for Keldurn, so check out their collection too.
@@ -110,4 +131,4 @@ For more addons, I recommend **[ne0x86/keldurn-addons](https://github.com/ne0x86
 
 Found a bug or have an addon you'd like to see adapted? Open an issue in this repository with the addon name and a description of the problem or request.
 
-For bug reports, include your addon version, steps to reproduce the issue, and any Lua error message. For Damage!, include the output of `/dam diag` when possible. For Bartender2, include `/bar diag` output and a screenshot if the bars are misplaced.
+For bug reports, include your addon version, steps to reproduce the issue, and any Lua error message. For Damage!, include the output of `/dam diag` when possible. For Bartender2, include `/bar diag` output and a screenshot if the bars are misplaced. For pfQuest performance issues, include `/pfquest perf` output while moving and say whether the world map, arrow, or minimap route lines are visible.
