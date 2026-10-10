@@ -5,13 +5,13 @@
 
 </div>
 
-[Available addons](#available-addons) · [Installation](#installation-windows) · [Damage! commands](#damage-commands) · [Bartender2 commands](#bartender2-commands) · [Bagnon](#bagnon-rewritten) · [pfQuest](#pfquest-rewritten) · [Gatherer](#gatherer-rewritten) · [More addons](#more-keldurn-addons)
+[Available addons](#available-addons) · [Installation](#installation-windows) · [Damage! commands](#damage-commands) · [Bartender2 commands](#bartender2-commands) · [Bagnon](#bagnon-rewritten) · [pfQuest](#pfquest-rewritten) · [Gatherer](#gatherer-rewritten) · [OmniCC](#omnicc-rewritten) · [More addons](#more-keldurn-addons)
 
 ---
 
 ## Available addons
 
-This repository is home to a growing collection of addons for Keldurn. The collection currently includes **Damage!**, **Bartender2 (Rewritten)**, **Bagnon (Rewritten)**, **pfQuest (Rewritten)**, and **Gatherer (Rewritten)**.
+This repository is home to a growing collection of addons for Keldurn. The collection currently includes **Damage!**, **Bartender2 (Rewritten)**, **Bagnon (Rewritten)**, **pfQuest (Rewritten)**, **Gatherer (Rewritten)**, and **OmniCC (Rewritten)**.
 
 | Addon | What it does | Commands |
 | --- | --- | --- |
@@ -20,6 +20,8 @@ This repository is home to a growing collection of addons for Keldurn. The colle
 | **Bagnon (Rewritten)** | Combines all your bags into one window, with inventory refresh fixes for Keldurn. | Open your bags normally |
 | **pfQuest (Rewritten)** | Quest locations, map markers, a searchable database, and route guidance, with movement-performance optimizations for Keldurn. | `/pfquest` or `/db` |
 | **Gatherer (Rewritten)** | Records gathered herbs, ore, and treasure locations and displays map markers, with a loading-error fix for Keldurn. | `/gather` or `/gatherer` |
+
+| **OmniCC (Rewritten)** | Displays remaining cooldown time on action, pet, stance, and item buttons, with cooldown and command compatibility fixes for Keldurn. | `/omnicc`, `/omni`, or `/cc` |
 
 ## Installation (Windows)
 
@@ -37,7 +39,7 @@ Download the ZIP for each addon you want from this repository, then follow these
 
 You can also install from the character selection screen: open **AddOns**, click **Install ZIP**, and select the downloaded addon archive. Then enable the addon.
 
-> **Folder tip:** The addon's `.toc` file should be directly inside its addon folder. For Damage!, the path ends in `AddOns\KeldurnMeter\KeldurnMeter.toc`. For Bartender2, it ends in `AddOns\Bartender2\Bartender2.toc`. For pfQuest, it ends in `AddOns\pfQuest\pfQuest.toc`. For Gatherer, it ends in `AddOns\Gatherer\Gatherer.toc`. Keep the included folder name when extracting.
+> **Folder tip:** The addon's `.toc` file should be directly inside its addon folder. For Damage!, the path ends in `AddOns\KeldurnMeter\KeldurnMeter.toc`. For Bartender2, it ends in `AddOns\Bartender2\Bartender2.toc`. For pfQuest, it ends in `AddOns\pfQuest\pfQuest.toc`. For Gatherer, it ends in `AddOns\Gatherer\Gatherer.toc`. For OmniCC, it ends in `AddOns\!OmniCC\!OmniCC.toc`. Keep the included folder name when extracting.
 
 When updating an addon, replace its existing files and restart Keldurn. Avoid leaving a second copy of the same addon installed.
 
@@ -139,6 +141,32 @@ Gatherer 2.99.1, with a small compatibility fix for Keldurn.
 - **Saved data:** preserves recorded nodes and existing settings.
 
 Use `/gather` or `/gatherer` for Gatherer's commands. Install the included `Gatherer` folder using the steps above. When updating, close Keldurn and replace that folder while keeping your saved variables.
+
+## OmniCC (Rewritten)
+
+Tuller's Omni Cooldown Count 1.1.0, adapted for Keldurn.
+
+- **Cooldown numbers:** displays remaining time over action, pet, stance, and item buttons.
+- **Readable countdowns:** changes text size and color as cooldowns approach completion.
+- **Native cooldown checks:** updates supported visible buttons even when Keldurn bypasses the old timer hook.
+- **Command aliases:** use `/omnicc`, `/omni`, or `/cc` to change settings.
+
+Install the included **`!OmniCC`** folder and keep the exclamation mark. Enable **Omni Cooldown Count** at character selection.
+
+### OmniCC commands
+
+All three aliases support the same subcommands. Settings use chat commands; entering `/cc` prints help.
+
+| Command | Action |
+| --- | --- |
+| `/cc` | Print available commands |
+| `/cc size 24` | Set text size; default is 20 |
+| `/cc min 3` | Show text for cooldowns longer than three seconds; default is 3 |
+| `/cc color short 1 0 0` | Set short-duration text color; also accepts `medium` or `long`, with RGB values from 0 to 1 |
+| `/cc font Fonts\FRIZQT__.TTF` | Select a font |
+| `/cc reset` | Restore default settings |
+
+By default, cooldowns of three seconds or less are excluded, including ordinary global cooldowns.
 
 ## More Keldurn addons
 
